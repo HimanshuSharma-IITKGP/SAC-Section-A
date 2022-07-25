@@ -1,0 +1,21 @@
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.name {
+  color: #cec2c2;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+  .detail {
+    align-items: center;
+  }
+}

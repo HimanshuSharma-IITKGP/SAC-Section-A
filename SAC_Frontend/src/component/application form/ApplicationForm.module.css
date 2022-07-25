@@ -1,0 +1,168 @@
+.form-container {
+  width: 60%;
+  background-color: #13232f;
+  margin: 2rem auto;
+  padding: 2rem 4rem;
+}
+
+.form-container h1 {
+  color: white;
+  background-color: #179b77;
+  width: fit-content;
+  margin: 0 auto 2rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.form {
+  gap: 2rem;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #f75f6c;
+  width: fit-content;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+}
+
+.form-container p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.error-text {
+  color: #f75f6c;
+}
+
+.success-text{
+  color: green;
+}
+
+.form-control {
+  gap: 8px;
+  width: 100%;
+}
+
+.form-control>input {
+  width: 100%;
+  padding: 1rem;
+  width: 100%;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 1.25rem;
+  outline: none;
+  border: 2px solid #a0b3b0;
+  border-radius: 3px;
+  font-family: 'Edu QLD Beginner', cursive;
+}
+
+.form-control>select {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 16px 20px;
+  border: 2px solid #a0b3b0;
+  border-radius: 4px;
+  background-color: #13232f;
+  color: white;
+  font-family: 'Edu QLD Beginner', cursive;
+}
+
+
+.form-control>select>option {
+  font-size: 1rem;
+}
+
+
+.form-control>label {
+  color: white;
+  font-size: 1.2rem;
+}
+
+
+
+.form-control>input:focus {
+  border: 2px solid #1ab188;
+  color: white;
+}
+
+
+
+.form-control>input[type='textarea'] {
+  height: 150px;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #13232f;
+  resize: none;
+}
+
+.btnAction {
+  margin-top: 2rem;
+}
+
+.submitBtn {
+  width: 50%;
+  font-size: 1.25rem;
+  padding: 15px;
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
+  background-color: #179b77;
+  cursor: pointer;
+  margin: auto;
+  transition: all 0.2s ease-in;
+  font-family: 'Edu QLD Beginner', cursive;
+}
+
+.submitBtn:disabled {
+  background-color: #10483a;
+  border-color: #10483a;
+  cursor: not-allowed;
+}
+
+.form-heading {
+  gap: 3rem;
+
+}
+
+.form-heading>.form-control>input {
+  text-align: center;
+  background-color: #13232f;
+  width: 90%;
+  font-size: 1.25rem;
+
+}
+
+.form-heading>.form-control>input:focus {
+  color: white;
+}
+
+
+
+@media screen and (max-width:920px) {
+  .form-heading>.form-control>input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .form-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .form-container {
+    width: 90%;
+  }
+
+  .form-control>input[type='textarea'] {
+    height: 100px;
+  }
+
+  .submitBtn {
+    width: 80%;
+  }
+}

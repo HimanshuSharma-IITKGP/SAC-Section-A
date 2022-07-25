@@ -1,0 +1,110 @@
+.form-container {
+  width: 60%;
+  background-color: #13232f;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form>div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 1rem 0;
+  text-align: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.form>div>label {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.form>div>input,
+.form>div>select {
+  background-color: #13232f;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-family: 'Edu QLD Beginner', cursive;
+  color: white;
+  border: 2px solid #a0b3b0;
+  border-radius: 4px;
+}
+
+
+.error {
+  background-color: #f8d7da;
+  color: #f75f6c;
+  width: fit-content;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+}
+
+
+.form-action {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.submitBtn {
+  font-size: 1.2rem;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid white;
+  background-color: green;
+  color: white;
+  transition: all 0.2s ease-in;
+  padding: 1rem;
+  font-family: 'Edu QLD Beginner', cursive;
+  cursor: pointer;
+}
+
+.submitBtn:disabled {
+  background-color: #999999;
+  border-color: #999999;
+  cursor: not-allowed;
+}
+
+.minStipend {
+  grid-column: 1;
+}
+
+.duration {
+  transform: translateX(50%);
+}
+
+@media screen and (max-width: 1000px) {
+  .form {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .duration {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .form-container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .form-container {
+    width: 80%;
+  }
+}

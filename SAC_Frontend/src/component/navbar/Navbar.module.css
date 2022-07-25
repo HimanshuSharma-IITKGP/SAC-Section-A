@@ -1,0 +1,17 @@
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  background-color: #f9f97171;
+  width: 90%;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.113);
+  margin: auto;
+}
